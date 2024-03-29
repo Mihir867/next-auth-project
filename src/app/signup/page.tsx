@@ -27,6 +27,7 @@ export default function Signup(){
         try {
             const response = await axios.post("/api/users/signup", user)
             console.log(response.data)
+            toast.success("User signed up succesfully")
             router.push("/signin")
         } catch (error) {
             console.log(error)
@@ -36,11 +37,11 @@ export default function Signup(){
         <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-md w-full space-y-8">
           <div>
-            <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
+            <h2 className="mt-6 text-center text-4xl text-gray-900">
               Sign up for an account
             </h2>
           </div>
-          <form className="mt-8 space-y-6">
+          <form className="mt-10 space-y-6">
             <div className="rounded-md shadow-sm -space-y-px">
               <div>
                 <label htmlFor="name" className="sr-only">
@@ -105,7 +106,7 @@ export default function Signup(){
               </button>
             </div>
           </form>
-          <Link href="/signin" className="text-black-600 hover:text-black-700">Visit the Login page</Link>
+          <Link href="/signin" className="text-black-600 hover:text-black-700 underline curser-pointer">Visit the Login page</Link>
         </div>
       </div>
     );
