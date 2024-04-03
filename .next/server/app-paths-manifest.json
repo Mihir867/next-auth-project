@@ -1,7 +1,5 @@
 {
-  "/signin/page": "app/signin/page.js",
-  "/signup/page": "app/signup/page.js",
-  "/forgot/page": "app/forgot/page.js",
-  "/reset/page": "app/reset/page.js",
-  "/verifyemail/page": "app/verifyemail/page.js"
+  "/api/users/me/route": "app/api/users/me/route.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/page": "app/page.js"
 }
